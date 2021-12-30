@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Website </title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script src="/static/project.js"></script>
+
+    </head>
+<body>
+    <div class="bg-img">
+        
+        <form action="/sub/" method="POST">
+            
+            {% csrf_token %}
+            <div class="center">
+                <h1> Office Registration Form</h1>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" placeholder="Email" name="email" class="classdiv" required >
+                </div>
+                <br>
+                <br>
+                <div>
+                    
+                    <label for="psw">Password:</label>
+                    <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Password" class="classdiv" >
+                </div>
+             <br>
+             <br>
+                <div>
+                    <label>Re-Type Password:</label>
+                    <input type="password" name="re_type" placeholder="Re-Type Password" id="pswre" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="classdiv" >
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label>First Name:</label>
+                    <input type="Text" name="fname" placeholder="Enter your first name" class="classdiv"  >
+                    
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label>Last  Name:</label>
+                    <input type="Text" name="lname"  placeholder="Enter your last name" class="classdiv"  >
+                    
+                </div>
+                <br>
+                <br>
+               <div>
+                <input type="radio" name="st" id="st" value="Male" checked>Male
+                <input type="radio" name="st" id="st" value="Female" checked>Female
+               </div>
+               <br>
+               <br>
+               <div>
+                <label>Select your country:</label>
+                <select name="country">
+                    <option selected>countries</option>
+                    <option value=1>India</option>
+                    <option value=2>Bahrain</option>
+                    <option value=3>USA</option>
+                    <option value=4>UK</option>
+                </select>
+                <br>
+                <br>
+               </div>
+               <br>
+               <br>
+               <div>
+                <input type="checkbox" name="tc"  value="Terms and Condition" checked>I agree with terms and conditions
+                </div>
+                <br>
+                <br>
+                <div>
+                    <input type="checkbox" name="nl"  value="newsletter" checked>I want to recieve the newsletter
+                </div>
+                <br>
+                <button class="button" align="center"  onclick="functions()">Register</button>
+                
+
+            </form>
+            </div>      
+            
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.swathi{
+    margin-left:40%;
+    margin-right:40%;
+    font:1em sans-serif;
+    
+
+}
+.bgcolor{
+    background-color: rgb(221, 210, 210);
+}
+.button{
+background-color: #a19704; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.button:hover{
+  background: lightsteelblue;
+}
+.center{
+  margin-left: 40%;
+  background-color:rgba(211, 211, 211, 0.507);
+  margin-right: 30%;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.bg-img {
+  background-image: url('https://thumbs.dreamstime.com/b/e-learning-concept-online-education-login-registration-screen-design-152015586.jpg');
+}
+
